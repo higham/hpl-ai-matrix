@@ -16,14 +16,14 @@ Other program files are
 
 * Usage
 
-=A = =hpl_ai_matrix(n,kappa)= returns an n-by-n matrix =A= for which which
+=A = hpl_ai_matrix(n,kappa)= returns an n-by-n matrix =A= for which which
 =cond(A,inf) = kappa > 1= and LU factorization with partial pivoting
 requires no row interchanges. The matrices are generated using the
 strategy discussed in the reference below. The default value of =kappa= is 1000.
 This function is not intended for small =n=, and an error is returned
 for =n < 100=.
 
-=A = =[a,alpha,beta] = hpl_ai_matrix(n,kappa,rho)= specifies the value of =rho=
+=[A,alpha,beta] = hpl_ai_matrix(n,kappa,rho)= specifies the value of =rho=
 satisfying =0 < rho < 1= (default 1/2) such that the parameters =alpha=
 and =beta= defining the matrix satisfy =alpha = rho*beta=.
 
