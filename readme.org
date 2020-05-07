@@ -1,0 +1,52 @@
+* HPL-AI-Matrix
+
+A MATLAB function constructing a matrix designed for use in the Matrix for
+[[https://icl.bitbucket.io/hpl-ai/][HPL-AI Benchmark]].
+
+* About
+
+=hpl_ai_matrix= is a MATLAB function that constructs a matrix designed for use
+in the Matrix for HPL-AI Benchmark.
+
+Other program files are
+
+- =test_hpl_ai_matrix=: runs a series of unit tests for the =hpl_ai_matrix=
+  function.
+- =fun_based_unit_tests=: used by =test_hpl_ai_matrix= and not intended to be
+  called directly.
+
+* Usage
+
+=hpl_ai_matrix(n,kappa)= returns an n-by-n matrix for which which
+=cond(A,inf) = kappa > 1= and LU factorization with partial pivoting
+requires no row interchanges. The matrices are generated using the
+strategy discussed in the reference below. The default value of =kappa= is 1000.
+This function is not intended for small =n=, and an error is returned
+for =n < 100=.
+
+=[a,alpha,beta] = hpl_ai_matrix(n,kappa,rho)= specifies the value of RHO
+satisfying =0 < rho <= 1- (default 1/2) such that the parameters =alpha=
+and =beta= defining the matrix satisfy =alpha = rho*beta=.
+
+=a = hpl_ai_matrix(n,kappa,rho,alpha,beta)= uses the specified values
+of =alpha= and =beta=. Both parameters must be specified, and their
+values must satisfy the two conditions =0 < alpha <= beta= and
+=alpha <= 1. =kappa= and =rho= are ignored in this case, and a warning is
+emitted if =kappa= or =rho =are not empty.
+
+* Requirements
+
+The code was developed in MATLAB R2019b and 2020a and works with versions
+back to R2017a. (=hpl_ai_matrix= works in earlier versions but the test code
+does not as it uses string arrays.).
+
+* Reference
+
+M. Fasi and N. J. Higham. Matrices with tunable infinity-norm
+condition number and no need for pivoting in LU factorization.
+MIMS EPrint 2020.xx, Manchester Institute for Mathematical
+Sciences, The University of Manchester, UK, May 2020.
+
+* License
+
+See =license.txt= for licensing information.
