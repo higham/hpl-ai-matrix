@@ -4,6 +4,9 @@
 
 =hpl_ai_matrix= is a MATLAB function that constructs a matrix designed for use
 in the [[https://icl.bitbucket.io/hpl-ai/][HPL-AI Benchmark]].
+The matrix has a specified infinity-norm condition number,
+LU factorization with partial pivoting is numerically stable for it,
+and it can be formed in $O(n^2)$ flops.
 
 Other program files are
 
