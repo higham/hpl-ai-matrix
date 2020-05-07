@@ -1,12 +1,11 @@
 * HPL-AI-Matrix
 
-A MATLAB function constructing a matrix designed for use in the Matrix for
-[[https://icl.bitbucket.io/hpl-ai/][HPL-AI Benchmark]].
+Construct in MATLAB a matrix designed for use in the HPL-AI Benchmark.
 
 * About
 
 =hpl_ai_matrix= is a MATLAB function that constructs a matrix designed for use
-in the Matrix for HPL-AI Benchmark.
+in the Matrix for the [[https://icl.bitbucket.io/hpl-ai/][HPL-AI Benchmark]].
 
 Other program files are
 
