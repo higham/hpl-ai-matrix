@@ -41,10 +41,10 @@ does not as it uses string arrays.).
 
 * Reference
 
-M. Fasi and N. J. Higham. Matrices with tunable infinity-norm
-condition number and no need for pivoting in LU factorization.
-MIMS EPrint 2020.xx, Manchester Institute for Mathematical
-Sciences, The University of Manchester, UK, May 2020.
+M. Fasi and N. J. Higham.  [[http://eprints.maths.manchester.ac.uk/2775/][Matrices with tunable infinity-norm condition
+number and no need for pivoting in LU factorization]].  MIMS EPrint 2020.17,
+Manchester Institute for Mathematical Sciences, The University of
+Manchester, UK, July 2020.
 
 * License
 
