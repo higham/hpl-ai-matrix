@@ -41,7 +41,7 @@ does not as it uses string arrays.).
 
 * Reference
 
-M. Fasi and N. J. Higham. [[https://epubs.siam.org/doi/10.1137/20M1327938][Matrices with tunable infinity-norm condition
+M. Fasi and N. J. Higham. [[https://epubs.siam.org/doi/10.1137/20M1357238][Matrices with tunable infinity-norm condition
 number and no need for pivoting in LU factorization]]. SIAM J. Matrix
 Anal. Appl., 42(1):417--435, 2021.
 
