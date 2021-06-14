@@ -18,10 +18,9 @@ function [A,alpha,beta] = hpl_ai_matrix(n,kappa,rho,alpha,beta)
 %   emitted if KAPPA or RHO are not empty.
 %
 %   Reference:
-%   [1] M. Fasi and N. J. Higham. Matrices with tunable infinity-norm
-%       condition number and no need for pivoting in LU factorization.
-%       MIMS EPrint 2020.xx, Manchester Institute for Mathematical
-%       Sciences, The University of Manchester, UK, May 2020.
+%   [1] M. Fasi and N. J. Higham.  Matrices with tunable infinity-norm
+%      condition number and no need for pivoting in LU factorization.  
+%      SIAM J. Matrix Anal. Appl., 42(1):417--435, 2021.
 
   if nargin < 1
     error('hpl_ai_matrix:invalidNARGIN',...
