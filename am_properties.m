@@ -1,4 +1,4 @@
 function P = am_properties
 
-P = {'hpl_ai_matrix', {''}
+P = {'hpl_ai_matrix', {}
     };
