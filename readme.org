@@ -9,9 +9,9 @@ numerically stable for it, and it can be formed in O(n^2) flops.
 
 Other program files are
 
-- =test_hpl_ai_matrix=: runs a series of unit tests for the =hpl_ai_matrix=
+- =test_run=: runs a series of unit tests for the =hpl_ai_matrix=
   function.
-- =fun_based_unit_tests=: used by =test_hpl_ai_matrix= and not intended to be
+- =fun_based_unit_tests=: used by =test_run= and not intended to be
   called directly.
 
 * Usage
